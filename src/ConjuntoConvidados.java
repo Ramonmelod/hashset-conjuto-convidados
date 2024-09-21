@@ -33,4 +33,19 @@ public class ConjuntoConvidados {
         }
     }
 
+    public int ContarConvidados() {
+        return convidadoSet.size();
+    }
+
+    public Set<Convidado> PesquisarConvidadoPorNome(String nome) {
+        Set<Convidado> convidadoPorNomeSet = new HashSet<>();
+        for (Convidado conv : convidadoSet) {
+            if (conv.getNome().startsWith(nome)) {
+                convidadoPorNomeSet.add(conv);
+            }
+
+        }
+        return convidadoPorNomeSet;
+    }
+
 }
