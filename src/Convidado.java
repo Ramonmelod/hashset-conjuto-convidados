@@ -1,4 +1,4 @@
-public class Convidado {
+public class Convidado implements Comparable<Convidado> {
     private String nome;
     private int codigoConvite;
 
@@ -6,6 +6,11 @@ public class Convidado {
         this.nome = nome;
         this.codigoConvite = codigoConvite;
 
+    }
+
+    @Override
+    public int compareTo(Convidado c) { // when the sort mathod is called the variable nome is the main reference
+        return nome.compareToIgnoreCase(c.nome);
     }
 
     public int getCodigoConvite() {

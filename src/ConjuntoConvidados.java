@@ -1,6 +1,6 @@
-
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class ConjuntoConvidados {
 
@@ -46,6 +46,11 @@ public class ConjuntoConvidados {
 
         }
         return convidadoPorNomeSet;
+    }
+
+    public Set OrdenarConvidadosOrdemAlfabetica() {
+        Set<Convidado> alf = new TreeSet<>(convidadoSet);
+        return alf;
     }
 
 }

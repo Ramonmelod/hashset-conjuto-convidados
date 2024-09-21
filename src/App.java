@@ -16,6 +16,8 @@ public class App {
         System.out.println("número convidados: " + listaConvidados.ContarConvidados());
         System.out.println("----------------Convidados por nome------------------");
         System.out.println(listaConvidados.PesquisarConvidadoPorNome("Pedro"));
+        System.out.println("----------------Convidados ordem alfabética------------------");
+        System.out.println(listaConvidados.OrdenarConvidadosOrdemAlfabetica());
 
     }
 }
