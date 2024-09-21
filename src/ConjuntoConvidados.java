@@ -49,8 +49,14 @@ public class ConjuntoConvidados {
     }
 
     public Set OrdenarConvidadosOrdemAlfabetica() {
-        Set<Convidado> alf = new TreeSet<>(convidadoSet);
-        return alf;
+        Set<Convidado> alfset = new TreeSet<>(convidadoSet);
+        return alfset;
+    }
+
+    public Set<Convidado> OrdenarConvidadosPorCodigoConvite() {
+        Set<Convidado> codset = new TreeSet<>(new OrdenarPorCodigoConvite());
+        codset.addAll(convidadoSet);
+        return codset;
     }
 
 }

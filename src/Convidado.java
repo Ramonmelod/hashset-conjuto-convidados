@@ -1,3 +1,6 @@
+
+import java.util.Comparator;
+
 public class Convidado implements Comparable<Convidado> {
     private String nome;
     private int codigoConvite;
@@ -47,6 +50,15 @@ public class Convidado implements Comparable<Convidado> {
     @Override
     public String toString() {
         return "Nome: " + getNome() + ", Código do Convite: " + getCodigoConvite();
+    }
+
+}
+
+class OrdenarPorCodigoConvite implements Comparator<Convidado> {
+
+    @Override
+    public int compare(Convidado c1, Convidado c2) {
+        return Integer.compare(c1.getCodigoConvite(), c2.getCodigoConvite());
     }
 
 }

@@ -18,6 +18,8 @@ public class App {
         System.out.println(listaConvidados.PesquisarConvidadoPorNome("Pedro"));
         System.out.println("----------------Convidados ordem alfabética------------------");
         System.out.println(listaConvidados.OrdenarConvidadosOrdemAlfabetica());
+        System.out.println("----------------Convidados por codigo convite------------------");
+        System.out.println(listaConvidados.OrdenarConvidadosPorCodigoConvite());
 
     }
 }
